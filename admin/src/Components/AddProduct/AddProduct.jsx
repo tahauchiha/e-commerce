@@ -27,7 +27,7 @@ const AddProduct = () => {
       let formData =new FormData();
       formData.append('product',image);
 
-      await fetch('https://e-commerce-backend-cqbc.onrender.com/upload',{
+      await fetch('https://e-commerce-backend-x0j7.onrender.com/upload',{
         method:'POST',
         headers:{
           Accept:'application/json',
@@ -38,7 +38,7 @@ const AddProduct = () => {
       if(responseData.success){
         product.image = responseData.image_url;
         console.log(product);
-        await fetch('https://e-commerce-backend-cqbc.onrender.com/addproduct',{
+        await fetch('/https://e-commerce-backend-x0j7.onrender.comaddproduct',{
           method:'POST',
           headers:{
             Accept:'application/json',
