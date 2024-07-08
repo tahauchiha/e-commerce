@@ -38,7 +38,7 @@ const AddProduct = () => {
       if(responseData.success){
         product.image = responseData.image_url;
         console.log(product);
-        await fetch('/https://e-commerce-backend-x0j7.onrender.comaddproduct',{
+        await fetch('https://e-commerce-backend-x0j7.onrender.com/addproduct',{
           method:'POST',
           headers:{
             Accept:'application/json',
